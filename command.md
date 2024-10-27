@@ -2,9 +2,9 @@
 ```bash
 export WANDB_MODE=disabled  # 禁止使用，不然会报错
 
-nohup python train.py > /home/lenovo/data/liujiaji/powerGit/OilGit/logs/oildata-yolov8m-coordAtt.log 2>&1 & tail -f /home/lenovo/data/liujiaji/powerGit/OilGit/logs/oildata-yolov8m-coordAtt.log
+nohup python train.py > /home/lenovo/data/liujiaji/oilGit/logs/oildata-yolov8m-coordAtt.log 2>&1 & tail -f /home/lenovo/data/liujiaji/oilGit/logs/oildata-yolov8m-coordAtt.log
 
-python detect.py > /home/lenovo/data/liujiaji/powerGit/OilGit/logs/detect/DJI_20240926150333_0001_Z.log 2>&1 & tail -f /home/lenovo/data/liujiaji/powerGit/OilGit/logs/detect/DJI_20240926150333_0001_Z.log
+python detect.py > /home/lenovo/data/liujiaji/oilGit/logs/detect/DJI_20240926150333_0001_Z.log 2>&1 & tail -f /home/lenovo/data/liujiaji/oilGit/logs/detect/DJI_20240926150333_0001_Z.log
 
 scp -r lenovo@121.195.169.36:/home/lenovo/data/liujiaji/yolov8/ultralytics-main/runs/detect/multi/conf-0.85/oilexp9/DJI_20240926150333_0001_Z.avi /Users/rl/Desktop/
 
@@ -12,8 +12,12 @@ scp -r lenovo@121.195.169.36:/home/lenovo/data/liujiaji/yolov8/ultralytics-main/
 
 #### 实验
 
+```bash
+数据集： /home/lenovo/data/liujiaji/Oildata
+主目录下为8分类的数据集，2分类的数据在 /two-cls 下 
+```
+
 ```text
-数据集：
 well normal 数量为: 89 89 
 well lost 数量为: 80 80 
 well with man:car 数量为: 86 86 
