@@ -7,7 +7,7 @@ from ultralytics import YOLO
 if __name__ == '__main__':
     model = YOLO('runs/train/oilexp6/weights/best.pt')
     # model = YOLO('runs/distill/yolov8n-l2-exp1/weights/best.pt')
-    model.val(data='/home/lenovo/data/liujiaji/powerGit/OilGit/Oildata.yaml',
+    model.val(data='/home/lenovo/data/liujiaji/oilGit/Oildata.yaml',
               split='test',
               imgsz=800,
               batch=16,

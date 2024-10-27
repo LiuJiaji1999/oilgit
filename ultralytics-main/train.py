@@ -9,7 +9,7 @@ if __name__ == '__main__':
     # model = YOLO('/home/lenovo/data/liujiaji/yolov8/ultralytics-main/runs/train/exp2/weights/last.pt')
     model.load('yolov8m.pt') # loading pretrain weights
     
-    model.train(data='/home/lenovo/data/liujiaji/powerGit/OilGit/Oildata.yaml',
+    model.train(data='/home/lenovo/data/liujiaji/oilGit/Oildata.yaml',
                 cache=False,
                 imgsz=640,
                 epochs=300,
