@@ -21,7 +21,7 @@ if __name__ == '__main__':
                 
                   imgsz=800,
                   project='runs/detect',
-                  name='multi/conf-0.85/oilexp',
+                  name='oilexp',
                   save=True,
                   conf=0.94,
                   # iou=0.7,
