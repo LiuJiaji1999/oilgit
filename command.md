@@ -49,7 +49,9 @@ epoch = 200, runs/oilexp5: yolov8m.yaml
 epoch = 300, runs/oilexp6: yolov8m-attention.yaml  
 
 ```
+![Alt text](image/image-1.png)
 
+![Alt text](image/image-2.png)
 
 
 ------------ 二分类 ----------
@@ -60,6 +62,6 @@ epoch = 300, runs/oilexp6: yolov8m-attention.yaml
 epoch = 200, runs/oilexp: yolov8m.yaml 
 test数据集结果如下图：
 ```
-![Alt text](image.png)
+![Alt text](image/twocls.png)
 
 
