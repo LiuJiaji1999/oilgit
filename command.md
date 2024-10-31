@@ -1,20 +1,8 @@
-## 命令
-```bash
-export WANDB_MODE=disabled  # 禁止使用，不然会报错
-
-nohup python train.py > /home/lenovo/data/liujiaji/oilGit/logs/oildata-yolov8m-coordAtt.log 2>&1 & tail -f /home/lenovo/data/liujiaji/oilGit/logs/oildata-yolov8m-coordAtt.log
-
-python detect.py > /home/lenovo/data/liujiaji/oilGit/logs/detect/DJI_20240926150333_0001_Z.log 2>&1 & tail -f /home/lenovo/data/liujiaji/oilGit/logs/detect/DJI_20240926150333_0001_Z.log
-
-scp -r lenovo@121.195.169.36:/home/lenovo/data/liujiaji/yolov8/ultralytics-main/runs/detect/multi/conf-0.85/oilexp9/DJI_20240926150333_0001_Z.avi /Users/rl/Desktop/
-
-```
-
-#### 实验
-
+#### 数据
 ```bash
 数据集： /home/lenovo/data/liujiaji/Oildata
 主目录下为8分类的数据集，2分类的数据在 /two-cls 下 
+百度网盘：
 ```
 
 ```text
@@ -28,6 +16,20 @@ Pointer normal 数量为: 115 115
 所有文件数量为: 729 729
 train set size: 510 val set size: 73 test set size: 146
 ```
+
+#### 命令
+```bash
+export WANDB_MODE=disabled  # 禁止使用，不然会报错
+
+nohup python train.py > /home/lenovo/data/liujiaji/oilGit/logs/oildata-yolov8m-coordAtt.log 2>&1 & tail -f /home/lenovo/data/liujiaji/oilGit/logs/oildata-yolov8m-coordAtt.log
+
+python detect.py > /home/lenovo/data/liujiaji/oilGit/logs/detect/DJI_20240926150333_0001_Z.log 2>&1 & tail -f /home/lenovo/data/liujiaji/oilGit/logs/detect/DJI_20240926150333_0001_Z.log
+
+scp -r lenovo@121.195.169.36:/home/lenovo/data/liujiaji/yolov8/ultralytics-main/runs/detect/multi/conf-0.85/oilexp9/DJI_20240926150333_0001_Z.avi /Users/rl/Desktop/
+```
+
+#### 实验
+
 
 
 ``` bash
