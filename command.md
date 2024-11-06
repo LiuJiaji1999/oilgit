@@ -2,7 +2,7 @@
 ```bash
 数据集： /home/lenovo/data/liujiaji/Oildata
 主目录下为8分类的数据集，2分类的数据在 /two-cls 下 
-百度网盘： 
+百度网盘： https://pan.baidu.com/s/1ZkvgnErsNEUHX-WUmYQaFw
 
 ```
 
